@@ -1,9 +1,9 @@
 var mysql = require('mysql');
 var conn = mysql.createConnection({
     host: 'db.cs.dal.ca',
-    user: 'gang',
-    password: '780309vY',
-    database: 'gang'
+    user: '****',
+    password: '*****',
+    database: '****'
 });
 conn.connect(function(err) {
     if (err) throw err;
