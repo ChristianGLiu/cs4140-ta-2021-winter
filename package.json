@@ -1,0 +1,18 @@
+{
+  "name": "4140-a1",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 23456 dist",
+    "compile": "(browserify database.js -o dist/database.js -d) && (browserify read.js -o dist/read.js -d) && (browserify update.js -o dist/update.js -d) && (browserify delete.js -o dist/delete.js -d) && (browserify create.js -o dist/create.js -d)"
+  },
+  "author": "****",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "http-server": "^0.11.1",
+    "jquery": "^3.5.1",
+    "mysql": "^2.18.1",
+    "prompt": "^1.1.0"
+  }
+}
